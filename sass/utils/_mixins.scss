@@ -1,0 +1,10 @@
+@mixin transition($property) {
+    transition: $property 250ms $animation-movement;
+    
+}
+
+@mixin centeredFlex(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

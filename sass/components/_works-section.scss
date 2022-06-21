@@ -1,0 +1,46 @@
+.section--no-padding {
+    padding-top: 0;
+}
+
+.works {
+    display: flex;
+
+    &__item {
+            position: relative;
+    
+            color: $second-accent-color;
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 1.14;
+            text-align: center;
+
+            &:not(:last-child) {
+                    margin-right: 30px;
+                }
+        }
+
+    &__img {
+        display: block;
+        width: 100%;
+    }
+
+    &__title-box {
+        position: absolute;
+        bottom: 0;
+    
+        @include centeredFlex();
+        height: 70px;
+        width: 100%;
+    
+        background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
+    }
+
+    &__title {
+        color: $second-accent-color;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+    }
+
+}

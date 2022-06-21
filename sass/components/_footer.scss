@@ -1,0 +1,164 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: #2f303a;
+
+    &__wrapper {
+            display: flex;
+            align-items: baseline;
+        }
+
+    &__address {
+        margin-right: 70px;
+    }
+}
+
+.page-footer__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: $second-accent-color;
+}
+
+.contacts{
+    &__item{
+
+        &:not(:last-child) {
+                margin-bottom: 9px;
+            }
+    }
+
+    &__link {
+        display: inline-block;
+    
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        font-style: normal;
+        color: rgba(100%, 100%, 100%, 60%);
+    
+        @include transition(color);
+
+        &--real-address {
+                color: $second-accent-color;
+            }
+
+        &:hover,
+        &:focus{
+            color: $accent-color;
+        }
+    }
+}
+
+.social {
+    margin-right: 93px;
+
+    &__title {
+            margin-bottom: 20px;
+    
+            color: $second-accent-color;
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 1.14;
+        }
+}
+
+.social-list--footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-list__link--dark{
+
+    background-color: rgba(255, 255, 255, 0.1);
+        
+    @include transition(background-color);
+
+    &:hover,
+    &:focus{
+            background-color:$accent-color;
+    }
+}
+
+.social-list__icon--dark{
+
+    fill: $second-accent-color;
+}
+
+.mailing-list{
+
+    &__title {
+            margin-bottom: 20px;
+    
+            color: $second-accent-color;
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 1.14;
+        }
+
+    &__form {
+        display: flex;
+        align-items: center;
+    }
+
+    &__input {
+        display: block;
+        height: 50px;
+        width: 358px;
+    
+        padding: 15px 16px;
+        background-color: #2f303a;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        outline: transparent;
+    
+        @include transition(border-color);
+
+        &::placeholder {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.25;
+            }
+
+        &:focus-within,
+        &:hover{
+                color: $second-accent-color;
+                border-color: $accent-color;
+        }
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+    
+        padding: 10px 29px;
+        margin-left: 12px;
+    
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+        transition: background-color 250ms $animation-movement,
+                color 250ms $animation-movement;
+
+        &:hover,
+        &:focus{
+            background-color: $second-accent-color;
+            color: $accent-color;
+        }
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        fill: $second-accent-color;
+    
+        @include transition(fill);
+
+        .mailing-list__button:hover &,
+        .mailing-list__button:focus{
+            fill: $accent-color;
+        }
+    }
+}
