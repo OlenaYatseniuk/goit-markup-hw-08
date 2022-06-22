@@ -5,22 +5,57 @@
     background-color: #2f303a;
 
     &__wrapper {
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        @media screen and(min-width: 1200px) {
             display: flex;
             align-items: baseline;
         }
+            
+    }
+
 
     &__address {
-        margin-right: 70px;
+        margin: 0 auto 60px auto;
+        max-width: 232px;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-right: 165px;
+            width: calc((100% - 165px) / 2);
+        }
+
+        @media screen and(min-width: 1200px){
+
+            margin:  0 70px 0 0;
+        }
     }
 }
 
 .page-footer__logo {
-    display: inline-block;
+    display: block;
     margin-bottom: 20px;
+
     color: $second-accent-color;
+
+    @media screen and (max-width: 1199px) {
+    
+        text-align: center;
+    }
 }
 
 .contacts{
+
+    @media screen and (max-width: 1199px) {
+    
+            text-align: center;
+        }
+
     &__item{
 
         &:not(:last-child) {
@@ -51,7 +86,17 @@
 }
 
 .social {
-    margin-right: 93px;
+    margin: 0 auto 60px auto;
+    max-width: 206px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: calc((100% - 165px) / 2);
+    }
+
+    @media screen and(min-width: 1200px){
+
+        margin: 0 93px 0 0;
+    }
 
     &__title {
             margin-bottom: 20px;
@@ -60,6 +105,11 @@
             text-transform: uppercase;
             font-size: 14px;
             line-height: 1.14;
+
+            @media screen and (max-width: 1199px) {
+                
+                text-align: center;
+            }
         }
 }
 
@@ -87,6 +137,12 @@
 
 .mailing-list{
 
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        margin: 0 auto;
+        max-width: 450px;
+        width: 100%;
+    }
+
     &__title {
             margin-bottom: 20px;
     
@@ -94,17 +150,30 @@
             text-transform: uppercase;
             font-size: 14px;
             line-height: 1.14;
+
+            @media screen and (max-width: 1199px) {
+                text-align: center;
+            }
         }
 
     &__form {
-        display: flex;
-        align-items: center;
+    
+        @media screen and(max-width: 1199px) {
+            width: 100%;
+        }
+
+        @media screen and(min-width: 1200px) {
+            display: flex;
+            align-items: center;
+        }
+        
     }
 
     &__input {
         display: block;
         height: 50px;
-        width: 358px;
+        width: 100%;
+        margin: 0 auto;
     
         padding: 15px 16px;
         background-color: #2f303a;
@@ -114,6 +183,16 @@
         outline: transparent;
     
         @include transition(border-color);
+
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 20px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0px;
+            width: 358px;
+        }
+        
 
         &::placeholder {
                 font-style: normal;
@@ -145,6 +224,10 @@
         &:focus{
             background-color: $second-accent-color;
             color: $accent-color;
+        }
+
+        @media screen and (max-width: 1199px) {
+            margin: 0 auto;
         }
     }
 
