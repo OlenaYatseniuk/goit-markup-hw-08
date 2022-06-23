@@ -1,28 +1,44 @@
 .auth-nav {
-    display: flex;
     margin-left: auto;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 
     &__item {
             display: flex;
 
-            &:not(:last-child) {
-                    margin-right: 50px;
-                }
+            @media screen and (min-width:1200px) {
+                
+                &:not(:last-child) {
+                        margin-right: 50px;
+                    }
+            }
+
         }
     
     &__link {
             display: flex;
             align-items: center;
-            padding-top: 32px;
-            padding-bottom: 32px;
+            padding-top: 10px;
+            padding-bottom: 10px;
         
             font-weight: 500;
-            font-size: 14px;
-            line-height: 1.14;
+            font-size: 12px;
+            line-height: 1.16;
             letter-spacing: 0.02em;
             color: $secondary-text-color;
         
             @include transition (color);
+
+
+            @media screen and (min-width: 1200px) {
+                padding-top: 32px;
+                padding-bottom: 32px;
+
+                font-size: 14px;
+                line-height: 1.14;
+            }
 
             &:hover,
             &:focus{
@@ -33,6 +49,32 @@
         margin-right: 10px;
     
         fill: #757575;
+
+        &--letter{
+            @media screen and (min-width:768px) {
+                width: 12px;
+                height: 10px;
+            }
+
+            @media screen and (min-width:1200px) {
+                width: 16px;
+                height: 12px;
+            }
+        }
+
+        &--telephone{
+            @media screen and (min-width:768px) {
+                    width: 10px;
+                    height: 14px;
+                }
+
+            @media screen and (min-width:1200px) {
+                    width: 10px;
+                    height: 16px;
+            }
+        }
+
+        
 
         .auth-nav__link:hover &,
         .auth-nav__link:focus &{

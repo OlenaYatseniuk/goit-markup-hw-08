@@ -1,12 +1,13 @@
 body {
     margin: 0;
+    position: relative;
 
     font-family: $primary-font, sans-serif;
     letter-spacing: 0.03em;
     font-size: 16px;
     color: $primary-text-color;
 
-    &.modal-open{
+    &.modal-open {
         overflow: hidden;
     }
 }
@@ -34,6 +35,12 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     margin: 0 auto;
     padding: 0 15px;
@@ -47,7 +54,7 @@ a {
     }
 
     @media screen and (min-width: 1200px) {
-            width: 1200px;
+        width: 1200px;
     }
 }
 
@@ -57,7 +64,7 @@ a {
 
     @media screen and (min-width:1200px) {
         padding-top: 94px;
-        padding-bottom: 94px;   
+        padding-bottom: 94px;
     }
 }
 
@@ -90,4 +97,3 @@ a {
     clip-path: inset(50%);
     margin: -1px;
 }
-
