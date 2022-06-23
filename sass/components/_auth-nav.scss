@@ -6,51 +6,52 @@
     }
 
     &__item {
-            display: flex;
+        display: flex;
 
-            @media screen and (min-width:1200px) {
-                
-                &:not(:last-child) {
-                        margin-right: 50px;
-                    }
+        @media screen and (min-width:1200px) {
+
+            &:not(:last-child) {
+                margin-right: 50px;
             }
-
         }
-    
+
+    }
+
     &__link {
-            display: flex;
-            align-items: center;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 1.16;
-            letter-spacing: 0.02em;
-            color: $secondary-text-color;
-        
-            @include transition (color);
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        color: $secondary-text-color;
+
+        @include transition (color);
 
 
-            @media screen and (min-width: 1200px) {
-                padding-top: 32px;
-                padding-bottom: 32px;
+        @media screen and (min-width: 1200px) {
+            padding-top: 32px;
+            padding-bottom: 32px;
 
-                font-size: 14px;
-                line-height: 1.14;
-            }
-
-            &:hover,
-            &:focus{
-                color: $accent-color;
-            }
+            font-size: 14px;
+            line-height: 1.14;
         }
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+    }
+
     &__icon {
         margin-right: 10px;
-    
+
         fill: #757575;
 
-        &--letter{
+        &--letter {
             @media screen and (min-width:768px) {
                 width: 12px;
                 height: 10px;
@@ -62,22 +63,22 @@
             }
         }
 
-        &--telephone{
+        &--telephone {
             @media screen and (min-width:768px) {
-                    width: 10px;
-                    height: 14px;
-                }
+                width: 10px;
+                height: 14px;
+            }
 
             @media screen and (min-width:1200px) {
-                    width: 10px;
-                    height: 16px;
+                width: 10px;
+                height: 16px;
             }
         }
 
-        
+
 
         .auth-nav__link:hover &,
-        .auth-nav__link:focus &{
+        .auth-nav__link:focus & {
             fill: $accent-color;
         }
     }

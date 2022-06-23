@@ -17,7 +17,7 @@
             display: flex;
             align-items: baseline;
         }
-            
+
     }
 
 
@@ -30,9 +30,9 @@
             width: calc((100% - 165px) / 2);
         }
 
-        @media screen and(min-width: 1200px){
+        @media screen and(min-width: 1200px) {
 
-            margin:  0 70px 0 0;
+            margin: 0 70px 0 0;
         }
     }
 }
@@ -44,42 +44,42 @@
     color: $second-accent-color;
 
     @media screen and (max-width: 1199px) {
-    
+
         text-align: center;
     }
 }
 
-.contacts{
+.contacts {
 
     @media screen and (max-width: 1199px) {
-    
-            text-align: center;
-        }
 
-    &__item{
+        text-align: center;
+    }
+
+    &__item {
 
         &:not(:last-child) {
-                margin-bottom: 9px;
-            }
+            margin-bottom: 9px;
+        }
     }
 
     &__link {
         display: inline-block;
-    
+
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
         font-style: normal;
         color: rgba(100%, 100%, 100%, 60%);
-    
+
         @include transition(color);
 
         &--real-address {
-                color: $second-accent-color;
-            }
+            color: $second-accent-color;
+        }
 
         &:hover,
-        &:focus{
+        &:focus {
             color: $accent-color;
         }
     }
@@ -93,71 +93,71 @@
         width: calc((100% - 165px) / 2);
     }
 
-    @media screen and(min-width: 1200px){
+    @media screen and(min-width: 1200px) {
 
         margin: 0 93px 0 0;
     }
 
     &__title {
-            margin-bottom: 20px;
-    
-            color: $second-accent-color;
-            text-transform: uppercase;
-            font-size: 14px;
-            line-height: 1.14;
+        margin-bottom: 20px;
 
-            @media screen and (max-width: 1199px) {
-                
-                text-align: center;
-            }
+        color: $second-accent-color;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1.14;
+
+        @media screen and (max-width: 1199px) {
+
+            text-align: center;
         }
+    }
 }
 
-.social-list--footer{
+.social-list--footer {
     display: flex;
     justify-content: space-between;
 }
 
-.social-list__link--dark{
+.social-list__link--dark {
 
     background-color: rgba(255, 255, 255, 0.1);
-        
+
     @include transition(background-color);
 
     &:hover,
-    &:focus{
-            background-color:$accent-color;
+    &:focus {
+        background-color: $accent-color;
     }
 }
 
-.social-list__icon--dark{
+.social-list__icon--dark {
 
     fill: $second-accent-color;
 }
 
-.mailing-list{
+.mailing-list {
 
-    @media screen and (min-width: 768px) and (max-width: 1199px){
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin: 0 auto;
         max-width: 450px;
         width: 100%;
     }
 
     &__title {
-            margin-bottom: 20px;
-    
-            color: $second-accent-color;
-            text-transform: uppercase;
-            font-size: 14px;
-            line-height: 1.14;
+        margin-bottom: 20px;
 
-            @media screen and (max-width: 1199px) {
-                text-align: center;
-            }
+        color: $second-accent-color;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1.14;
+
+        @media screen and (max-width: 1199px) {
+            text-align: center;
         }
+    }
 
     &__form {
-    
+
         @media screen and(max-width: 1199px) {
             width: 100%;
         }
@@ -166,7 +166,7 @@
             display: flex;
             align-items: center;
         }
-        
+
     }
 
     &__input {
@@ -174,14 +174,14 @@
         height: 50px;
         width: 100%;
         margin: 0 auto;
-    
+
         padding: 15px 16px;
         background-color: #2f303a;
         border: 1px solid rgba(255, 255, 255, 0.3);
         box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         outline: transparent;
-    
+
         @include transition(border-color);
 
         @media screen and (max-width: 1199px) {
@@ -192,36 +192,36 @@
             margin-bottom: 0px;
             width: 358px;
         }
-        
+
 
         &::placeholder {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 1.25;
-            }
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+        }
 
         &:focus-within,
-        &:hover{
-                color: $second-accent-color;
-                border-color: $accent-color;
+        &:hover {
+            color: $second-accent-color;
+            border-color: $accent-color;
         }
     }
 
     &__button {
         display: flex;
         align-items: center;
-    
+
         padding: 10px 29px;
         margin-left: 12px;
-    
+
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    
+
         transition: background-color 250ms $animation-movement,
-                color 250ms $animation-movement;
+            color 250ms $animation-movement;
 
         &:hover,
-        &:focus{
+        &:focus {
             background-color: $second-accent-color;
             color: $accent-color;
         }
@@ -236,11 +236,11 @@
         height: 24px;
         margin-left: 10px;
         fill: $second-accent-color;
-    
+
         @include transition(fill);
 
         .mailing-list__button:hover &,
-        .mailing-list__button:focus{
+        .mailing-list__button:focus {
             fill: $accent-color;
         }
     }
