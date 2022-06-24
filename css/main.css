@@ -343,6 +343,9 @@ img {
   color: #2196f3;
   padding: 5px 10px;
 }
+.social-mobile__link--no-padding {
+  padding-left: 0;
+}
 @media screen and (min-width: 480px) {
   .social-mobile__link {
     font-size: 18px;
